@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Food Items with Vegan Options</title>
+    <style type="text/css">
+        /* Basic styling with intentional imperfections */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .section-title {
+            font-size: 22px;
+            margin-bottom: 25px;
+            color: #333;
+            font-weight: 600;
+            padding-left: 10px;
+        }
+        
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .food-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+        
+        .food-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .discount-badge {
+            background: #eaf5ea;
+            color: #4CAF50;
+            padding: 5px 10px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 12px;
+            border-radius: 4px;
+        }
+        
+        .food-name {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 10px 15px 5px;
+            color: #333;
+        }
+        
+        .food-name .vegan-tag {
+            background: #4CAF50;
+            color: white;
+            font-size: 12px;
+            padding: 2px 6px;
+            border-radius: 3px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
+        
+        .food-details {
+            margin: 0 15px 15px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .rating-time {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        
+        .rating {
+            color: #fc8019;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+        
+        .cuisine-type {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        
+        .location {
+            color: #888;
+            font-size: 13px;
+        }
+        
+        /* Some intentional inconsistency in styles */
+        .price-badge {
+            background: #fff5ed;
+            color: #fc8019;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 13px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="section-title">Restaurants to explore</h2>
+    
+    <div class="food-grid">
+        <!-- Card 1 -->
+        <div class="food-card">
+            <div style="padding: 15px;">
+                <div class="discount-badge">40% OFF UPTO ₹80</div>
+                <h3 class="food-name">Vegan Margherita Pizza <span class="vegan-tag">VEGAN</span></h3>
+                <div class="food-details">
+                    <div class="rating-time">
+                        <span class="rating">4.4</span>
+                        <span>55-60 mins</span>
+                    </div>
+                    <div class="cuisine-type">European, Continental</div>
+                    <div class="location">Koregaon Park</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 2 -->
+        <div class="food-card">
+            <div style="padding: 15px;">
+                <div class="discount-badge">40% OFF UPTO ₹80</div>
+                <h3 class="food-name">Vegan Veggie Delite Sub <span class="vegan-tag">VEGAN</span></h3>
+                <div class="food-details">
+                    <div class="rating-time">
+                        <span class="rating">4.3</span>
+                        <span>30-35 mins</span>
+                    </div>
+                    <div class="price-badge">ITEMS AT ₹129</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 3 -->
+        <div class="food-card">
+            <div style="padding: 15px;">
+                <div class="discount-badge">10% OFF UPTO ₹40</div>
+                <h3 class="food-name">Vegan Protein Bowl <span class="vegan-tag">VEGAN</span></h3>
+                <div class="food-details">
+                    <div class="rating-time">
+                        <span class="rating">4.5</span>
+                        <span>30-35 mins</span>
+                    </div>
+                    <div class="cuisine-type">Healthy Food, Salads, Burgers</div>
+                    <div class="location">Shivajinagar</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 4 -->
+        <div class="food-card">
+            <div style="padding: 15px;">
+                <div class="discount-badge">20% OFF UPTO ₹120</div>
+                <h3 class="food-name">Vegan Raw Salad <span class="vegan-tag">VEGAN</span></h3>
+                <div class="food-details">
+                    <div class="rating-time">
+                        <span class="rating">4.4</span>
+                        <span>40-45 mins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 5 -->
+        <div class="food-card">
+            <div style="padding: 15px;">
+                <div class="price-badge">ITEMS AT ₹179</div>
+                <h3 class="food-name">Vegan Pasta Alfredo <span class="vegan-tag">VEGAN</span></h3>
+                <div class="food-details">
+                    <div class="rating-time">
+                        <span class="rating">4.3</span>
+                        <span>50-55 mins</span>
+                    </div>
+                    <div class="cuisine-type">Pizzas, Pastas, Desserts, Salads</div>
+                    <div class="location">Koregaon Park</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 6 -->
+        <div class="food-card">
+            <div style="padding: 15px;">
+                <div class="discount-badge">30% OFF UPTO ₹150</div>
+                <h3 class="food-name">Vegan Avocado Toast <span class="vegan-tag">VEGAN</span></h3>
+                <div class="food-details">
+                    <div class="rating-time">
+                        <span class="rating">4.2</span>
+                        <span>50-55 mins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 7 -->
+        <div class="food-card">
+            <div style="padding: 15px;">
+                <div class="discount-badge">40% OFF UPTO ₹80</div>
+                <h3 class="food-name">Vegan Burger <span class="vegan-tag">VEGAN</span></h3>
+                <div class="food-details">
+                    <div class="rating-time">
+                        <span class="rating">4.3</span>
+                        <span>45-50 mins</span>
+                    </div>
+                    <div class="cuisine-type">Continental, Italian</div>
+                    <div class="location">Shivaji Nagar</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Card 8 -->
+        <div class="food-card">
+            <div style="padding: 15px;">
+                <div class="discount-badge">40% OFF UPTO ₹80</div>
+                <h3 class="food-name">Vegan Smoothie Bowl <span class="vegan-tag">VEGAN</span></h3>
+                <div class="food-details">
+                    <div class="rating-time">
+                        <span class="rating">4.3</span>
+                        <span>35-40 mins</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
